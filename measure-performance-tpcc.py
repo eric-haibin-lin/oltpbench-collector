@@ -81,15 +81,15 @@ if __name__ == "__main__":
     # delivery_ratio = 0
     # stock_level_ratio = 0
 
-    new_order_ratio =  100
-    payment_ratio = 0
-    order_status_ratio =0
-    delivery_ratio = 0
-    stock_level_ratio = 0
+    new_order_ratio =  44
+    payment_ratio = 44
+    order_status_ratio = 4
+    delivery_ratio = 4
+    stock_level_ratio = 4
     test_time = 60
     for thread_num in [1, 2, 4, 6, 8, 10, 11, 12, 16,20,24,28,32,40,48,56,64]:
-        prepare_parameters()
         scale_factor = thread_num
+        prepare_parameters()
         start_bench()
         result_dir_name = "tpcc_collected_data_%d_%d_%d_%d_%d_%d_%d" % (new_order_ratio, payment_ratio, order_status_ratio, delivery_ratio, stock_level_ratio, scale_factor, thread_num)
         collect_data(result_dir_name)
