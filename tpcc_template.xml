@@ -2,7 +2,7 @@
 <parameters>
 
     <!-- Connection details -->
-    <dbtype>postgres</dbtype>
+    <dbtype>peloton</dbtype>
     <driver>org.postgresql.Driver</driver>
 	<DBUrl>jdbc:postgresql://$IP:$PORT/tpcc/</DBUrl>
 	<DBName>tpcc</DBName>
